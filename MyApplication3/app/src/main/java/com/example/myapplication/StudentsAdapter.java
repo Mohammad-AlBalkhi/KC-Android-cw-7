@@ -34,8 +34,8 @@ public class StudentsAdapter extends ArrayAdapter {
 
         studentName.setText(currentstudent.getStudentName());
         studentImg.setImageResource(currentstudent.getStudentImg());
-        studentAge.setText(currentstudent.getStudentAge());
-        studentGrade.setText(currentstudent.getStudentGrade());
+        studentAge.setText(String.valueOf(currentstudent.getStudentAge()));
+        studentGrade.setText(String.valueOf(currentstudent.getStudentGrade()));
         return View;
     }
 }
